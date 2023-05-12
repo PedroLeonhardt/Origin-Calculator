@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h1>CALCULADORA</h1>
+        <div class="parede">      
+            <p id="resultado"></p>    
+            <div class="parede2">
+                <div class="line4">    
+                    <button type="submit" class="btn-primary1" onclick="clean()">C</button>
+                    <button type="submit" class="A" class="btn-primary1" onclick="back()">Apagar</button>
+                </div>    
+                <div class="line0">
+                    <button type="submit" class="btn-primary1" onclick="insert('*')">x</button>
+                    <button type="submit" class="btn-primary" class="7" onclick="insert('7')">7</button>
+                    <button type="submit" class="btn-primary" class="8" onclick="insert('8')">8</button>
+                    <button type="submit" class="btn-primary" class="9" onclick="insert('9')">9</button>              
+                </div>
+                <div class="line1">
+                    <button type="submit" class="btn-primary1" onclick="insert('+')">+</button>
+                    <button type="submit" class="btn-primary" class="4" onclick="insert('4')">4</button>
+                    <button type="submit" class="btn-primary" class="5" onclick="insert('5')">5</button>
+                    <button type="submit" class="btn-primary" class="6" onclick="insert('6')">6</button>
+                </div>
+                <div class="line2">    
+                    <button type="submit" class="btn-primary1" onclick="insert('-')">-</button>
+                    <button type="submit" class="btn-primary" class="1" onclick="insert('1')">1</button>
+                    <button type="submit" class="btn-primary" class="2" onclick="insert('2')">2</button>
+                    <button type="submit" class="btn-primary" class="3" onclick="insert('3')">3</button>
+                </div>
+                <div class="line3">
+                    <button type="submit" class="btn-primary1" onclick="insert('/')">/</button>
+                    <button type="submit" class="igual" class="btn-primary1" onclick="calcular()">=</button>
+                </div>
+            </div>
+        </div>  
+
+</body>
+</html>
